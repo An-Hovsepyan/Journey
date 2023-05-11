@@ -4,8 +4,9 @@
 
 <head>
     <title>All Tours</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="Bootstrapt.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    
 </head>
 <style>
   body {background-color: white;
@@ -28,8 +29,12 @@
 </style>
 
 <body>
-    <ol class="breadcrumb">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+    
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
             <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" style="color: rgb(127, 225, 255);"/>
           </svg>
           &emsp;
@@ -40,32 +45,40 @@
       </svg>
       &emsp;
       <li class="breadcrumb-item active" style="color: rgb(127, 225, 255);"> +374 60 00 66 00</li>
-      <div class="log">
-      <button type="button" class="btn btn-secondary">
-        <a class="btn btn-secondary" href="Login.html" target="_blank"> Log in </a>
-        <a class="btn btn-secondary" href="signup.html" target="_blank"> Sign up </a>
-      </button>
-      <button type="button"class="btn btn-secondary">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-postcard-heart-fill" viewBox="0 0 16 16">
-        <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2Zm6 2.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0Zm3.5.878c1.482-1.42 4.795 1.392 0 4.622-4.795-3.23-1.482-6.043 0-4.622ZM2 5.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5Zm0 2a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5Zm0 2a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5Z"/>
-        </svg>
-        </button>
     </div>
+    <div class="log">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="Login.html" target="_blank">Log in</a></li>
+      <li class="breadcrumb-item"><a href="signup.html" target="_blank">Sign up</a></li>
+      <li class="breadcrumb-item"><a href="myOrder.html" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-heart-fill" viewBox="0 0 16 16">
+        <path d="M2 15.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v13.5zM8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"/>
+      </svg></a></li>
     </ol>
-    <h1 class="title"> 
-        <img class="logo" src="logo.jpg" alt="logotip" height="80">
-        </h1>
+  </div>
+     <button type="button" class="btn btn-primary">
+    <a class="btn btn-primary" href="Home.html"> Home </a>
+    <a class="btn btn-primary" href="allTours.html"> All tours </a>
+    <a class="btn btn-primary" href="Schedule.html"> Schedule </a>
+    <a class="btn btn-primary" href="Terms.html"> Terms </a>
+    <a class="btn btn-primary" href="aboutUs.html"> About us </a>
+    </button>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-<button type="button" class="btn btn-success">
-    <h1>
-<a class="btn btn-success" href="Home.html"> Home </a>
-<a class="btn btn-success"> All Tours </a>
-<a class="btn btn-success" href="Schedule.html"> Schedule </a>
-<a class="btn btn-success" href="Terms.html"> Terms </a>
-<a class="btn btn-success" href="aboutAs.html"> About us </a>
-<a class="btn btn-success" href="myOrder.html">  </a>
+  <form class="d-flex" style="margin-left: 1200px;">
+    <input class="form-control me-sm-2" type="search" placeholder="Search">
+    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+  </form>
+  
+
+<h1 class="title"> 
+<img class="logo" src="Images/logotip.jpg" alt="logotip" height="110" style="font-weight: 100%;">
 </h1>
-</button>
+
+
+
 <div class="div">
 <table>
   <tr>
@@ -87,15 +100,15 @@
         <a class="btn btn-success" href="myOrder.html">Book</a>
       </td>
       <tr>
-        <td><img src="landTour.jpg" alt="landTour" width="400" height="450"></td>
+        <td><img src="Images/landTour.jpg" alt="landTour" width="400" height="450"></td>
         <td>
-          <img src="Family.jpg" alt="familyTour" width="400" height="473">
+          <img src="Images/Family.jpg" alt="familyTour" width="400" height="473">
         </td>
         <td>
-          <img src="Venice.jpg" alt="cruise" width="400" height="473">
+          <img src="Images/Venice.jpg" alt="cruise" width="400" height="473">
         </td>
         <td>
-          <img src="Florence.jpg" alt="Florence" width="400" height="473">
+          <img src="Images/Florence.jpg" alt="Florence" width="400" height="473">
         </td>
       </tr>
       <tr>
