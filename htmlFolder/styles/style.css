@@ -197,6 +197,11 @@ color:var(--color-error)
 .form__link:hover{
     text-decoration: underline;
 }
+.table-active{
+    width:1400px;
+  height: 200px;
+  float:right;
+}
 /* Media queries for the responsiveness of the page */
 @media screen and (max-width: 600px) {
     form{
