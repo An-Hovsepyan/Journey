@@ -199,7 +199,7 @@ color:var(--color-error)
     text-decoration: underline;
 }
 .table-active{
-    width:1200px;
+    width:1500px;
   height: 100px;
   float:right;
   margin-top: -6%;
